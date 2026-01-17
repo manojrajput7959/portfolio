@@ -1,0 +1,115 @@
+@import "tailwindcss";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/syne/500.css";
+@import "@fontsource/syne/600.css";
+@import "@fontsource/syne/700.css";
+
+@theme {
+    --font-body: "inter", "sans-serif";
+    --font-heading: "syne", "sans-serif";
+    --color-gradient: linear-gradient(90deg,
+            #FF4D6D 0%,
+            #BD3EB2 25%,
+            #7B2FF7 50%,
+            #2F86F7 75%,
+            #2FF7ED 100%)
+}
+
+@layer base {
+    body {
+        @apply bg-black text-white font-body text-xl overflow-x-clip;
+    }
+
+    .text-stork {
+        -webkit-text-stroke: 1px white;
+        color: transparent;
+    }
+
+    .Btn {
+        background: linear-gradient(#000, #000) padding-box,
+            var(--color-gradient) border-box;
+    }
+
+    .Btn:hover {
+        background: var(--color-gradient) padding-box,
+            var(--color-gradient) border-box;
+    }
+
+    .Btn-explore {
+        padding: 1vw 3vw;
+        background: linear-gradient(#fff, #fff) padding-box,
+            var(--color-gradient) border-box;
+         font-weight: 800;
+         font-size: 16px; 
+    }
+
+    
+ @keyframes marquee {
+   0% { transform: translateX(-100%);}
+   100% { transform: translateX(0%)}
+}
+
+ .marquee-animate{
+  animation: marquee 15s linear infinite;
+}
+  
+ .marquee-animate-reverse{
+    animation: marquee 15s linear reverse infinite;
+ }
+
+ @keyframes rotation360 {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+ }
+
+ .marquee-star1{
+  animation: rotation360 5s linear infinite;
+  transform-origin: center;
+ }
+ .marquee-star2{
+    animation: rotation360 5s linear infinite reverse;
+    transform-origin: center;
+ }
+ 
+ @keyframes rotateS {
+     0%{transform: rotate(0deg);}
+     100%{transform: rotate(360deg);}
+ }
+
+ .star-animate{
+    animation: rotateS 12s linear infinite;
+    transform-origin: center;
+ }
+
+}
+
+
+@layer gradient-D {
+
+    .grade {
+        position: relative;
+
+        &::before {
+            content: " ";
+            position: absolute;
+            left: 2%;
+            bottom: 20%;
+            width: 96%;
+            height: 1vh;
+            background: var(--color-gradient);
+            z-index: -1;
+        }
+
+        &::after {
+            content: " ";
+            position: absolute;
+            left: 2%;
+            bottom: 10%;
+            width: 96%;
+            height: 2px;
+            background: var(--color-gradient);
+            z-index: -1;
+        }
+    }
+}
