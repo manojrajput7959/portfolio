@@ -18,8 +18,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav ref={navbarRef} className=' fixed top-0 w-full mix-blend-difference z-1'>
-        <div className="main-component  w-full p-8 sm:px-20 sm:py-6 flex justify-between">
+      <nav ref={navbarRef} className='fixed top-0 w-[96vw]  mix-blend-difference z-1'>
+        <div className="main-component  w-full p-8 sm:px-20 sm:py-6  flex justify-between">
           <div className="">
             <h1 className='font-heading text-4xl md:text-6xl'>M
               <span className='inline-block w-2 h-2 md:w-3 md:h-3 bg-white text-white rounded-full'></span>

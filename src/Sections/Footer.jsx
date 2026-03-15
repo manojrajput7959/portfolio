@@ -71,7 +71,7 @@ const Footer = () => {
                 <div className="flex  font-heading gap-1 text-sm lg:text-lg ">
                     <div className="flex gap-1 lg:gap-4 justify-between">
                         <i class="ri-copyright-line"></i>
-                        <span>2025 M..</span>
+                        <span>2026 M..</span>
                     </div>
                     <div className="border-r-2 h-3.5 mt-0.5 lg:h-4.5 lg:mt-1 lg:pt-2"></div>
                     <div className="text-sm lg:text-lg">

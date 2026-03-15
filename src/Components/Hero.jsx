@@ -63,12 +63,12 @@ const Hero = () => {
 
   return (
     <>
-      <div ref={heroRef} className="flex flex-col font-heading w-full h-screen relative lg:justify-center items-start lg:pt-20 pl-7 lg:pl-24 max-lg:pt-35">
+      <div ref={heroRef} className="flex flex-col font-heading w-[90vw]  h-screen relative lg:justify-center items-start lg:pt-20 pl-7 lg:pl-24 max-lg:pt-35">
         <div className="grade text-2xl lg:text-[3vw]"><h1>MANOJ</h1></div>
         <div className="text-[18vw] lg:text-[10vw] py-4 md:p-2 tracking-tight leading-15 lg:leading-35 h2Class"><h2>Web Developer <br />& <span className='text-stork'>Designer</span></h2></div>
         <GradientBtn text="let's talk" className="btnAnimate" />
 
-        <div className=" absolute top-85 left-43 md:left-210 lg:-right-100 lg:top-15 lg:bottom-0 -z-10 w-[99%] lg:w-[70%]">
+        <div className=" absolute  top-85 left-43 md:left-210 lg:-right-100 lg:top-15 lg:bottom-0 -z-10 w-[9%] lg:w-[70%]">
           <img src={Star} className='lg:w-[90%] w-[99%] star-animate' />
         </div>
       </div>

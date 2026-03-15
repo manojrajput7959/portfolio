@@ -52,6 +52,7 @@
 
  .marquee-animate{
   animation: marquee 15s linear infinite;
+
 }
   
  .marquee-animate-reverse{
