@@ -118,7 +118,7 @@ const Work = () => {
       <div className="bg-white overflow-y-hidden lg:overflow-x-clip">
         <div ref={containerRef} className="flex z-10 lg:flex-row flex-col lg:gap-6 lg:px-6 lg:ms-[40%] pl-5 spin-box">
           {projects.map((item, index) => (
-            <div key={item._id} className={`relative w-[88vw] lg:w-120 h-[57vw] my-5  lg:h-[22vw] pt-9 lg:pt-10 px-4 lg:px-5 block rounded-lg flex-shrink-0 group ${item.class}`}>
+            <div key={item._id} className={`relative w-[88vw] lg:w-120 h-[57vw] my-5  lg:h-[20vw] pt-9 lg:pt-10 px-4 lg:px-5 block rounded-lg flex-shrink-0 group ${item.class}`}>
               <a href={item.link}>
                 <img src={item.url} className="lg:w-full w-full h-[18vh] lg:h-50 rounded-sm lg:rounded-lg shadow-2xl shadow-zinc-800 lg:transition-transform duration-300 group-hover:scale-105" />
 
